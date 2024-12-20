@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'gallery',                      # Приложение
-    'djangorestframework',          # DjangoRestFramework
-    'django-cors-headers',          # CORS для React
+    'rest_framework',               # DjangoRestFramework API
+    'corsheaders',                  # CORS для React
 ]
 
 MIDDLEWARE = [
