@@ -49,7 +49,7 @@
 1. **Клонирование репозитория:**
 
    ```bash
-   git clone https://github.com/your-username/task-manager.git
+   git clone https://github.com/Luter0316/Project-gallery
    cd task-manager
    ```
 
