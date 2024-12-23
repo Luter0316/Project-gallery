@@ -1,6 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Projects from './components/Projects';
+import ProjectInfo from './components/ProjectInfo';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const title = 'Список проектов';
 
@@ -12,8 +14,12 @@ function App() {
       </Helmet>
       <div className="row justify-content-center" style={{ height: '50vh' }}>
         <div className="col-md-8 align-self-center">
-          <h1 className="text-center mt-5 mb-5">{title}</h1>
-          <Projects />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Projects />} />
+              <Route path="/projects/:id" element={<ProjectInfo />} />
+            </Routes>
+        </BrowserRouter>
         </div>
       </div>
     </div>
