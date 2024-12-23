@@ -50,7 +50,7 @@
 
    ```bash
    git clone https://github.com/Luter0316/Project-gallery
-   cd task-manager
+   cd Project-gallery
    ```
 
 2. **Backend (Django):**
